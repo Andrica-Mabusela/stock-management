@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stock Management | Welcome</title>
+
+    <!-- external css libraries  -->
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/animate.min.css">
+    <link rel="stylesheet" href="public/css/slick.css">
+    <link rel="stylesheet" href="public/css/slick-theme.css">
+    <link rel="stylesheet" href="public/css/fontawesome-all.min.css">
+
+    <!-- custom stylesheet  -->
+    <link rel="stylesheet" href="public/css/styles.css">
+
+</head>
+<body>
+
+    <!-- start add stock form  PRODUCT 1 -->
+    <div id="add-stock-wrapper-1">
+        
+        <div id='add-stock-inner-wrapper-1'>
+                <span class="cancel" onclick="removeModal()">X</span>
+            <h2 class="text-center">Add stock for product 1 </h2>
+            <br>
+            <form id='add-stock-form-1'>
+
+                <div class="form-group">
+                    <label for="">Week Number</label>
+                    <input type="number" class="form-control" id='week-number-1' placeholder="Week Number">
+                 </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" id='product-name-1' placeholder="Product Name" value="product 1" hidden>
+                </div>
+
+                <div class="form-group">
+                    <label for="product-items-1">Number of Items</label>
+                        <input type="number" class="form-control" id='product-items-1' placeholder="Number Of Items">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" id='product-item-price-1' placeholder="Item Price in rands">
+                </div>
+                
+                <button type="submit" class="btn">Add stock</button>
+
+            </form>
+        </div>
+        
+    </div>
+    <!-- end of add stock form  -->
+
+
+
+
+<!-- start add stock form  PRODUCT 2 -->
+<div id="add-stock-wrapper-2">
+        
+        <div id='add-stock-inner-wrapper-2'>
+                <span class="cancel" onclick="removeModal()">X</span>
+            <h2 class="text-center">Add stock for product 2 </h2>
+            <br>
+            <form id='add-stock-form-2'>
+
+                <div class="form-group">
+                    <input type="number" class="form-control" id='week-number-2' placeholder="Week number">
+                </div>
+
+                <div class="form-group">
+                        <input type="text" class="form-control" id='product-name-2' value="product 2" hidden>
+                    </div>
+
+                <div class="form-group">
+                    <label for="product-items-2">Number of Items</label>
+                        <input type="number" class="form-control" id='product-items-2' placeholder="Number Of Items">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" id='product-item-price-2' placeholder="Item Price in rands">
+                </div>
+                
+                <button type="submit" class="btn">Add stock</button>
+
+            </form>
+        </div>
+        
+    </div>
+    <!-- end of add stock form  -->
+
+
+
+
+<!-- start add stock form  PRODUCT 1 -->
+<div id="add-stock-wrapper-3">
+        
+        <div id='add-stock-inner-wrapper-3'>
+                <span class="cancel" onclick="removeModal()">X</span>
+            <h2 class="text-center">Add stock for product 3 </h2>
+            <br>
+            <form id='add-stock-form-3'>
+
+                <div class="form-group">
+                    <label for="week-number-3">Week Number</label>
+                    <input type="number" class="form-control" id='week-number-3' placeholder="Week Number">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" id='product-name-3' placeholder="Product Name" value="product 3" hidden>
+                </div>
+
+                <div class="form-group">
+                    <label for="product-items-1">Number of Items</label>
+                        <input type="number" class="form-control" id='product-items-3' placeholder="Number Of Items">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" id='product-item-price-3' placeholder="Item Price in rands">
+                </div>
+                
+                <button type="submit" class="btn">Add stock</button>
+
+            </form>
+        </div>
+        
+    </div>
+    <!-- end of add stock form  -->
+
+
+
+
+
+
+    
+        <nav class="navbar navbar-expand-md" id="navbar">
+            <div class="container">
+                <a href="#navbar" class="navbar-brand">
+                    Stock Management
+                </a>
+
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a href="#navbar" class="nav-link">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#add-stock" class="nav-link">Add Stock</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#sell-stock" class="nav-link">Sell Stock</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- hero section  -->
+        <div id="hero-section" class="slider">
+
+            <div class="img-slide">
+
+                <div class="single-img">
+                    <img src="public/img/pic1.jpg" alt="image not found">
+
+                    <div class="slide-info">
+                        <p>
+                             Welcome to our website
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="single-img">
+                        <img src="public/img/pic2.jpg" alt="image not found">
+    
+                        <div class="slide-info">
+                            <p>
+                                You can use our system to add stock.
+                            </p>
+                        </div>
+                </div>
+
+
+                <div class="single-img">
+                            <img src="public/img/pic3.jpg" alt="image not found">
+        
+                            <div class="slide-info">
+                                <p class="text-white">
+                                    You can also sell stock to customers.
+                                </p>
+                            </div>
+                </div>
+
+            </div>
+
+        </div>
+
+<br><br>
+        <!-- add a stock section  -->
+        <h2 class="section-header text-center mt-4" id="add-stock">Add A Stock</h2>
+
+        <br><br><br>
+
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <!-- start of first card  -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="product-inner">
+                        <div class="card m-1 shadow-lg">
+                            <h2>Product 1</h2>
+                            <hr class="my-2">
+
+                            <div class="card-content">
+                                  
+                            </div>
+
+                            <div>
+                                <button class="btn btn-block" onclick="showAddStock1()">
+                                  <span class="add">+</span>
+                                    Add Stock
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- end of first card -->
+
+
+
+                 <!-- start of second card  -->
+                 <div class="col-sm-6 col-md-4">
+                        <div class="product-inner">
+                            <div class="card m-1 shadow-lg">
+                                <h2>Product 2</h2>
+
+                                <hr class="my-2">
+    
+                                <div class="card-content">
+                                       
+                                </div>
+    
+                                <div>
+                                    <button class="btn btn-block" onclick="showAddStock2()">
+                                        <span class="add">+</span>
+                                        Add Stock
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- end of second card -->
+
+
+
+
+                     <!-- start of third card  -->
+                <div class="col-sm-6 col-md-4">
+                        <div class="product-inner">
+                            <div class="card m-1 shadow-lg">
+                                <h2>Product 3</h2>
+
+                                <hr class="my-2">
+    
+                                <div class="card-content">
+                                    
+                                </div>
+    
+                                <div>
+                                    <button class="btn btn-block" onclick="showAddStock3()">
+                                            <span class="add">+</span>
+                                        Add Stock
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- end of third card -->
+            </div>
+        </div>
+
+
+        <br><br><br>
+        <br><br>
+
+    <h2 class="section-header text-center mb-4" id="sell-stock">Sell A Product</h2>
+
+    <br><br><br>
+    
+    <!-- show the data for product 1  -->
+    <div class="table-responsive">
+        <div class="text-center bg-light p-4">
+            <h2>Product 1</h2>
+        </div>
+
+        <table class="table table-1 table-striped">
+            <thead>
+                <tr>
+                    <th>Week</th>
+                    <th>Number of Items</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                    <th>sell</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+
+
+
+<br><br><br>
+
+
+     <!-- show the data for product 2  -->
+     <div class="table-responsive">
+            <div class="text-center bg-light p-4">
+                <h2>Product 2</h2>
+            </div>
+    
+            <table class="table table-2 table-striped">
+                <thead>
+                    <tr>
+                        <th>Week</th>
+                        <th>Number of Items</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                        <th>sell</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+    
+
+<br><br><br>
+
+
+
+ <!-- show the data for product 3  -->
+ <div class="table-responsive">
+        <div class="text-center bg-light p-4">
+            <h2>Product 3</h2>
+        </div>
+
+        <table class="table table-3 table-striped">
+            <thead>
+                <tr>
+                    <th>Week</th>
+                    <th>Number of Items</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                    <th>sell</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+
+    <div id="last-overlay"></div>
+
+    <div id="sell-product-modal">
+        <span class="remove-modal" onclick="removeSellerModal()">X</span>
+        <p class="text-center">A customer has requested to buy a product using an email account
+            Use the email address which the customer used to send the request in order to sell to the customer.
+        </p>
+
+        <div>
+            <form id="sell-product-form">
+                <div class="form-group">
+                    <input type="email" class="form-control" id="email" placeholder="Enter customer email Address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="">How many items does the customer want?</label>
+                    <input type="number" id="buyitems" min="1" placeholder="Number of items" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <p>
+                        <span>Price per Item: R</span>
+                        <span id='price-amount'></span>
+                    </p>
+                    <p>
+                        <span>Total Amount: R</span>
+                        <span id='total-amount'></span>
+                    </p>
+                </div>
+
+                <button class="btn btn-md sell-items-btn" onclick="">sell item(s)</button>
+            </form>
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- modal to tell the user that the items are sold to the customer -->
+
+    <div id="items-sold-overlay"></div>
+    <div id="items-sold-modal">
+        <h4>You have successfully sold these items to the customer!</h4>
+        <button class="btn btn-lg success-btn">ok</button>
+    </div>
+
+
+    <br><br><br>
+    <br><br><br>
+
+
+
+    <!-- used email address pop up  -->
+    <div id="used-email-wrapper">
+        <div id="used-email-content">
+            <p>Email Address has already been used, Sorry you cannot purchase any more items using this email address.</p>
+            <button id="used-email-btn" class="btn btn-md">ok</button>
+        </div>
+    </div>
+
+
+    <!-- javascript external libraries  -->
+    
+    <script src="public/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="public/js/slick.min.js"></script>
+    <script src="public/js/slick.js"></script>
+    <script src="public/js/bootstrap.min.js"></script>
+    <script src="public/js/popper.min.js"></script>
+
+    <!-- custom js file -->
+    <script src="public/js/script.js"></script>
+
+</body>
+</html>
